@@ -4192,8 +4192,7 @@ describe('WebSocket', () => {
 
       server.listen(0, () => {
         const ws = new WebSocket(`wss://localhost:${server.address().port}`, {
-          maxVersion: 'TLSv1.1',
-          rejectUnauthorized: false
+          maxVersion: 'TLSv1.1'
         });
 
         ws.on('error', (err) => {
