@@ -1746,8 +1746,7 @@ describe('WebSocket', () => {
 
             const ws = new WebSocket(`wss://localhost:${port}`, {
               followRedirects: true,
-              headers,
-              rejectUnauthorized: false
+              headers
             });
 
             const firstRequest = ws._req;
